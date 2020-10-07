@@ -61,10 +61,10 @@ const Parallax = () => {
   
   <div className='layer-1 layer parallax' data-depth='0.20'></div>
   <div className='layer-2 layer parallax' data-depth='0.30'></div>
-  <div className='layer-3 layer parallax' data-depth='0.40'></div>
-  <div className='layer-4 layer parallax' data-depth='0.50'></div>
-  <div className='layer-5 layer parallax' data-depth='0.70'></div>
-  <div className='layer-overlay layer parallax' data-depth='0.80'></div> 
+  <div className='layer-3 layer parallax' data-depth='0.50'></div>
+  <div className='layer-4 layer parallax' data-depth='0.60'></div>
+  <div className='layer-5 layer parallax' data-depth='0.80'></div>
+  <div className='layer-overlay layer parallax' data-depth='0.90'></div> 
   <Fade top duration={1000} delay={500} distance="60px">
     <div className="wrapper">
       {/* <Container> */}
