@@ -33,10 +33,3 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
-exports.onCreateWebpackConfig = ({ actions, stage }) => {
-  if (stage === 'build-javascript') {
-    actions.setWebpackConfig({
-      devtool: false
-    })
-  }
-};
