@@ -23,7 +23,7 @@ const Parallax = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
       trigger: "#hero",
-      start: "top",
+      start: "top top",
       end: "bottom",
       scrub: true
     },
@@ -47,7 +47,8 @@ const Parallax = () => {
         {y: movement, 
           ease: "none"}, 0
       )
-      
+      ScrollTrigger.refresh();
+
   });
 },[wrapper])
 
