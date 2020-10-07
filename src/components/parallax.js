@@ -24,7 +24,7 @@ const Parallax = () => {
       scrollTrigger: {
       trigger: "#hero",
       start: "top top",
-      end: "bottom",
+      end: "bottom top",
       scrub: true
     },
   });
