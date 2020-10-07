@@ -6,7 +6,11 @@ import PortfolioContext from '../context/context';
 import "../style/main.scss"
 import { gsap} from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger); 
+}
+// gsap.registerPlugin(ScrollTrigger);
 
 
 const Parallax = () => {
