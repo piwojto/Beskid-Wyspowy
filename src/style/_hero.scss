@@ -49,7 +49,7 @@
     }
     @include respond(tab-port) {
       font-size: 3.2rem;
-      text-align: center;
+      text-align: left;
     }
     @include respond(phone) {
       font-size: 2.2rem;
@@ -194,7 +194,7 @@
 
 @media only screen and (max-width: 576px) { 
   #hero {
-    height: 80vh;
+    height: 90vh;
     // margin-top: -10rem;
   }
   .hero-line {
