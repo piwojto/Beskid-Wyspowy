@@ -39,7 +39,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'mor3.webp',
     title: 'Mapy',
-    info: 'Beskid Wyspowy to przepiękny region połony pomiędzy doliną Raby a Kotliną Sądecką. ',
+    info: 'Beskid Wyspowy to przepiękny region położony pomiędzy doliną Raby a Kotliną Sądecką. ',
     info2: 'Nie trudno wyszukać tu trasę, w trakcie której będziemy mogli się cieszyć jedynie obecnością otaczającego nas lasu.',
     url: '',
     repo: 'https://mapa-turystyczna.pl/beskid-wyspowy#49.65606/20.33501/11', // if no repo, the button will not show up
