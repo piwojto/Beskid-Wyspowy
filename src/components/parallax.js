@@ -1,7 +1,5 @@
 import React, {useEffect, useRef, useState, useContext} from "react";
-import { Link } from "gatsby"
 import Fade from 'react-reveal/Fade';
-// import { Container } from 'react-bootstrap';
 import PortfolioContext from '../context/context';
 import "../style/main.scss"
 import { gsap} from 'gsap';
@@ -14,8 +12,7 @@ if (typeof window !== "undefined") {
 
 
 const Parallax = () => {
-  const { hero } = useContext(PortfolioContext);
-  // const { title, name, subtitle, cta } = hero;
+  // const { hero } = useContext(PortfolioContext);
   const wrapper = useRef(null)
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -38,7 +35,6 @@ const Parallax = () => {
       setIsDesktop(false);
     }
   
-  // wrapper.current = 
   gsap.utils.toArray(".parallax").forEach(layer => {
     const depth = layer.dataset.depth;
     const movement = -(layer.offsetHeight * depth)
@@ -47,7 +43,6 @@ const Parallax = () => {
         {y: movement, 
           ease: "none"}, 0
       )
-      ScrollTrigger.refresh();
 
   });
 },[wrapper])
@@ -61,11 +56,11 @@ const Parallax = () => {
   <div className='layer-bg layer parallax' data-depth='0.10'></div>
   
   <div className='layer-1 layer parallax' data-depth='0.15'></div>
-  <div className='layer-2 layer parallax' data-depth='0.20'></div>
-  <div className='layer-3 layer parallax' data-depth='0.25'></div>
-  <div className='layer-4 layer parallax' data-depth='0.30'></div>
+  <div className='layer-2 layer parallax' data-depth='0.25'></div>
+  <div className='layer-3 layer parallax' data-depth='0.35'></div>
+  <div className='layer-4 layer parallax' data-depth='0.40'></div>
   {/* <div className='layer-5 layer parallax' data-depth='0.50'></div> */}
-  <div className='layer-overlay layer parallax' data-depth='0.35'></div> 
+  <div className='layer-overlay layer parallax' data-depth='0.45'></div> 
   <Fade top duration={1000} delay={500} distance="60px">
     <div className="wrapper">
       {/* <Container> */}

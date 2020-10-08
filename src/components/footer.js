@@ -15,7 +15,7 @@ const Footer = () => {
     <footer className="footer navbar-static-bottom">
       <Container>
         <span className="back-to-top">
-          <Link to="#" smooth duration={3000}>
+          <Link to="#" smooth="true" duration={3000}>
             <i className="fa fa-caret-up fa-2x" aria-hidden="true" />
           </Link>
         </span>
