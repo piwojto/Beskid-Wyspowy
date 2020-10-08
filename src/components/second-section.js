@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 // import Title from '../components/Title';
-import SecondImg from '../components/SecondImg';
+// import SecondImg from '../components/SecondImg';
 import ProjectImg from '../components/ProjectImg';
 import PortfolioContext from '../context/context';
 
