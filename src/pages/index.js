@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from "react"
 import { PortfolioProvider } from '../context/context';
-// import { Link } from "gatsby"
-// import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
 import Parallax from "../components/parallax"
 import "../style/main.scss"
 import SecondSection from "../components/second-section"
-import { heroData, secondData, projectsData, contactData, footerData } from '../mock/data';
+import { heroData, secondData, projectsData, footerData } from '../mock/data';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "../components/footer";
 
@@ -21,7 +18,6 @@ const IndexPage= () => {
     setHero({ ...heroData });
     setSecond({ ...secondData });
     setProjects([...projectsData]);
-    // setContact({ ...contactData });
     setFooter({ ...footerData });
   }, []);
 

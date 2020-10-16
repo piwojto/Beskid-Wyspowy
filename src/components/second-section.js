@@ -1,17 +1,11 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
-// import Title from '../components/Title';
-// import SecondImg from '../components/SecondImg';
 import ProjectImg from '../components/ProjectImg';
 import PortfolioContext from '../context/context';
 
 const SecondSection = () => {
-  // const url='https://beskidy.netlify.app/beskidy/mogielica';
   const { projects } = useContext(PortfolioContext);
-  // const { second } = useContext(PortfolioContext);
-  // const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = second;
-
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -30,9 +24,8 @@ const SecondSection = () => {
       <Container>
        
       <div className="project-wrapper">
-          {/* <Title title="Projects" /> */}
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, repo, img, id } = project;
 
             return (
       <Row key={id}>

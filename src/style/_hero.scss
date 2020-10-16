@@ -98,6 +98,8 @@
 // }
 .wrapper {
   margin-left: 2rem;
+  transition: opacity 2.5s ease;
+    transition-delay: 5s;
 }
 
 .scroll-btn {
