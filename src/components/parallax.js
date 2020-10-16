@@ -38,7 +38,8 @@ const Parallax = () => {
       duration:1,
       // backgroundColor: '#27b50b',
       opacity:0,
-      ease: 'none'
+      ease: 'none',
+      autoAlpha:0
       }
   )
   
@@ -48,7 +49,8 @@ const Parallax = () => {
     tl.to
       (layer, 
         {y: movement, 
-          ease: "none"}, 0
+          ease: "none"}, 0,
+          {autoAlpha:1, delay:2}
       )
 
   });
@@ -67,6 +69,7 @@ const Parallax = () => {
 
   return (
     <>
+    {/* <div className='layer-bg layer parallax' data-depth='0.10'></div> */}
     <div id='hero' ref={wrapper}>
     
       <div className='layer-bg layer parallax' data-depth='0.10'></div>
