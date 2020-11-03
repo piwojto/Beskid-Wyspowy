@@ -19,7 +19,7 @@ const Footer = () => {
         <p className="footer__text">
           © {new Date().getFullYear()} - Beskid Wyspowy {' '}
         </p>
-        <a href="https://ever-art.pl" className="open-btn" target="_blank" rel="noopener noreferrer">
+        <a href="https://everart.pl" className="open-btn" target="_blank" rel="noopener noreferrer">
             everART
           </a>
       </Container>

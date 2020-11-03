@@ -34,14 +34,14 @@ const Parallax = () => {
 
     // TweenMax.to(app, 0, {css: {visibility: 'visible'}})
 
-  gsap.from('body', {
-      duration:1,
-      // backgroundColor: '#27b50b',
-      opacity:0,
-      ease: 'none',
-      autoAlpha:0
-      }
-  )
+  // gsap.from('body', {
+  //     duration:1,
+  //     // backgroundColor: '#27b50b',
+  //     opacity:0,
+  //     ease: 'none',
+  //     autoAlpha:0
+  //     }
+  // )
   
   gsap.utils.toArray(".parallax").forEach(layer => {
     const depth = layer.dataset.depth;
@@ -65,7 +65,7 @@ const Parallax = () => {
   //       // yoyo:true
   //   })
 
-},[wrapper])
+},[])
 
   return (
     <>
